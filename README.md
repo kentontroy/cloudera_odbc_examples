@@ -55,7 +55,7 @@ package-id: cloudera.hiveodbc
 version: 2.7.0
 ```
 ![image](./images/download-hive-odbc-driver.png)
-```
+
 ## Step 4
 ```
 Locate the files used to configured ODBC Data Source Names
