@@ -9,13 +9,12 @@ was deployed on a Mac laptop using homebrew to install the dependencies.
 ```
 ## Step 0
 ```
-Ensure that homebrew is installed on your Mac and in your path.
+Ensure that homebrew and keytool are installed on your Mac and in your path.
 % export PATH=$PATH:/opt/homebrew/bin
 % which keytool
 /opt/homebrew/opt/openjdk/bin/keytool
 ```
 ## Step 1
-```
 ![image](./images/download-cdw-hive-certs.001.png)
 ```
 Assumming you have keytool installed and downloaded the certificate chain as a file and named it as truststore.jks, create a PEM file:
