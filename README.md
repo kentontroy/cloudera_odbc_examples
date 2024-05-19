@@ -49,6 +49,7 @@ drwxr-xr-x   3 root  wheel      96 Mar 31  2021 lib
 ```
 Download the Cloudera ODBC Driver for Hive, e.g. try https://www.cloudera.com/downloads/connectors/hive/odbc/2-7-0.html
 To ensure that the driver was installed, run:
+
 % pkgutil --info cloudera.hiveodbc
 package-id: cloudera.hiveodbc
 version: 2.7.0
