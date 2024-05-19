@@ -20,7 +20,7 @@ Ensure that homebrew and keytool are installed on your Mac and in your path.
 Assumming you have keytool installed and downloaded the certificate chain as a file and named it as truststore.jks, create a PEM file:
 % keytool -list -rfc -keystore truststore.jks | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > cdw-certs.pem
 
-You should see multiple certificates in this file. Please also note that your /etc/hosts file on your ODBC client should be able to
+You should see multiple certificates in this file. Please also note that the /etc/hosts file on your ODBC client should be able to
 resolve the virtual URLs exposed by CDW.
 
 keytool prompts you for a password. Here, the default password of 'changeit' was used.
