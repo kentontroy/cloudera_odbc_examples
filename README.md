@@ -6,7 +6,7 @@ CDW exposes an SSL endpoint listening on port 443 and using a Transport Mode of 
 you authenticate to the endpoint using a username and password. The username and password is typically backed by an LDAP repository such
 as Active Directory or freeIPA. There are number of certificates to download and reference in an ODBC client.
 ```
-![image][./images/download-cdw-hive-certs.001.png]
+![image](./images/download-cdw-hive-certs.001.png)
 
 ```
 Assumming you have keytool installed and downloaded the certificate chain as a file and named it as truststore.jks, create a PEM file:
