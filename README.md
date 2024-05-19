@@ -100,6 +100,7 @@ For a detailed explanation of the settings above, please see an example referenc
 https://downloads.cloudera.com/connectors/impala_odbc_2.6.14.1016/Cloudera-ODBC-Connector-for-Impala-Install-Guide.pdf
 
 Next, the below should be updated automatically as you install the drivers for Hive, Impala, Postgres, etc.
+
 % cat /opt/homebrew/etc/odbcinst.ini
 [ODBC Drivers]
 PostgreSQL Unicode                   = Installed
