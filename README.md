@@ -125,16 +125,36 @@ Note that the library for the Cloudera Hive Driver is installed at:
 /opt/cloudera/hiveodbc/lib/universal/libclouderahiveodbc.dylib
 
 For convenience, use the path /usr/local/lib as a central point to reference the libraries needed:
+
 % sudo ln -s /opt/cloudera/hiveodbc/lib/universal/libclouderahiveodbc.dylib /usr/local/lib/libclouderahiveodbc.dylib
 % sudo ln -s /opt/homebrew/opt/unixodbc/lib/libodbcinst.dylib /usr/local/lib/libodbcinst.dylib
 
 Set the following environment variables:
+
 export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/lib
 export ODBCINI=/opt/homebrew/etc/odbc.ini
 export ODBCINSTINI=/opt/homebrew/etc/odbcinst.ini
 export CLOUDERAHIVEINI=/opt/cloudera/hiveodbc/lib/universal/cloudera.hiveodbc.ini
 ```
+## Step 7
+```
+Test the ODBC connection to CDW Hive using iSQL or any other desired ODBC tool.
 
+% which isql
+/opt/homebrew/bin/isql
+
+% isql -v CDW_Hive_DSN cdpuser1 cloudera2024
++---------------------------------------+
+| Connected!                            |
+|                                       |
+| sql-statement                         |
+| help [tablename]                      |
+| echo [string]                         |
+| quit                                  |
+|                                       |
++---------------------------------------+
+SQL>
+```
 
 
 
