@@ -6,14 +6,13 @@ CDW exposes an SSL endpoint listening on port 443 and using a Transport Mode of 
 you authenticate to the endpoint using a username and password. The username and password is typically backed by an LDAP repository such
 as Active Directory or freeIPA. There are number of certificates to download and reference in an ODBC client. The example described below
 was deployed on a Mac laptop using homebrew to install the dependencies.
-
+```
 ## Step 0
 ```
 Ensure that homebrew is installed on your Mac and in your path.
 % export PATH=$PATH:/opt/homebrew/bin
 % which keytool
 /opt/homebrew/opt/openjdk/bin/keytool
-
 ```
 ## Step 1
 ```
